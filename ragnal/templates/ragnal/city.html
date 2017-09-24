@@ -1,0 +1,28 @@
+{% extends 'ragnal/base.html' %}
+<title>{% block title %} {{results.name}} {% endblock %}</title>
+
+{%block city%} {{results.name}} {% endblock %}
+
+{% block body%}
+<div class = "row">
+	
+		{% for site in all_sites %} 
+		<div class = "col-sm-4">
+			
+			<div class = "thumbnail"> 
+				<div class = "caption">
+					<h4>{{site.area}}</h4>
+					<!-- View Details -->
+                           <a href="#" class="btn btn-primary btn-sm" role="button">View Details</a> 
+                            <!-- Favorite Album -->
+                            <a href="#" class="btn btn-default btn-sm btn-favorite" role="button">
+                                <span class="glyphicon glyphicon-star"></span>
+                            </a>
+				</div>
+    		</div>
+		</div>
+		{% cycle '' '' '' '' '' '<div class="clearfix visible-lg"></div>' %}
+		{%endfor%}
+	
+</div>
+{% endblock%}

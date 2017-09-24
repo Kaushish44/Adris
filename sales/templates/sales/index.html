@@ -1,0 +1,29 @@
+{% extends 'ragnal/base.html' %}
+<title>{% block title %} Sales {% endblock %}</title>
+
+{% block body %}
+{% load staticfiles %}
+<div class="container-fluid">
+	<div class="row">
+		<h2 style="margin-top:0px;"> Welcome, {{ user.username }}</h2>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2">
+			<div class="thumbnail" >
+				<img src="{% static "ragnal/customer.png" %}" class="img-responsive" style="height:200px" width="100%">
+				<div class="caption">
+				<a href= "{% url 'sales:customer' %}" class="btn btn-primary btn-lg" role="button" style="width:100%; height:50px;">Customer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-3 col-md-3 col-sm-offset-2 col-md-offset-2">
+			<div class="thumbnail">
+				<img src="{% static "ragnal/orders.png" %}" class="img-responsive" style="height:200px" width="100%">
+				<div class="caption">
+				<a href="{% url 'sales:orders' %} " class="btn btn-primary btn-lg" role="button" style="width:100%; height:50px;">Orders</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

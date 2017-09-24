@@ -1,0 +1,143 @@
+.navbar-brand {
+	font-family : Pacifico, serif;
+	font-size:24px;
+}
+
+.navbar {
+      margin-bottom: 0;
+      padding-top:20px;
+	  padding: 5px;
+	  border: 0px;
+      font-size: 12px !important;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+
+.navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+
+@media screen and (min-width:800px){
+	#navSearch{}
+}
+
+input[type=text] {
+	float: left;
+	width: 200px;
+    height: 34px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=email] {
+	float: left;
+	width: 200px;
+    height: 34px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search] {
+	float: right;
+	width: 110px;
+    height: 34px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=password] {
+	float: left;
+	width: 200px;
+    height: 34px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=password]:focus {
+    width: 100%;
+}
+
+input[type=search]:focus {
+    width: 100%;
+}
+
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+input[type=email]:focus {
+    width: 100%;
+}
+
+.jumbotron {
+      background-color: #242424;
+      color: #ffffff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  
+h2{
+	Margin: 65px 50px;	
+}
+
+.body{
+	padding-top=65px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+
+.item span {
+    font-style: normal;
+}
+  
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #242424;
+}
+.carousel-indicators li {
+    border-color: #242424;
+}
+.carousel-indicators li.active {
+    background-color: #242424;
+}
+ 
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.logo {
+	margin-top: 70px;
+    font-size: 200px;
+}
+
+.logo-small {
+      color: #242424;
+      font-size: 50px;
+  }
+  
+ footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #242424;
+  }
